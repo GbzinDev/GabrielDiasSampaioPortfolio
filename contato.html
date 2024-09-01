@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css"> <!--Conectar o HTML ao CSS-->
+</head>
+
+<body>
+    <div class="container"> <!--Classe para personalizar os links-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formação.html">Formação Educacional</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <br>
+        <header> <!--Logo-->
+            <div class="center">
+                <img src="./Images/G.png" alt="Logo G">
+            </div>
+            <h1>Gabriel</h1> <!--Títulos-->
+            <h2>Bem-vindo ao Meu Portfólio</h2>
+        </header>
+
+        <br><!--Para pular linha-->
+        <br>
+
+        <main>
+            <h3>Contato</h3>
+
+            <!-- Formulário de Contato -->
+            <form action="processar_contato.php" method="post">
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                </div>
+                
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

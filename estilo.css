@@ -1,0 +1,137 @@
+/* Estilo geral */
+body {
+    background-image: url('GIF/gif.gif'); /* Substitua pelo caminho do seu GIF */
+    background-size: cover; /* Cobre toda a área da tela */
+    background-repeat: no-repeat; /* Não repete o GIF */
+    background-position: center center; /* Centraliza o GIF */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Cabeçalho */
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+nav{
+    background-color: rgb(58, 58, 58); /* Define o fundo preto */
+    padding: 5px 15px; /* Adiciona um espaçamento interno ao redor dos links */
+    border-radius: 100px; /* Arredonda os cantos do fundo preto */
+    margin-top: 20px; /* Adiciona um espaçamento acima do menu para evitar que ele fique encostado no topo */
+}
+
+/* Personalizando os links */
+a {
+    position: relative; /* Torna o posicionamento do ::before relativo ao link */
+    display: inline-block; /* Ajusta o link para comportar o pseudo-elemento */
+    color: white;
+    text-decoration: none;
+    padding: 5px; /* Espaço para o elemento decorativo */
+}
+
+/* Alterando a cor do fundo decorativo ao passar o mouse sobre o link */
+nav a:hover::before {
+    background-color: rgba(0, 0, 0, 0.7); /* Escurece o fundo ao passar o mouse */
+}
+
+/* Personalizando a imagem/logo */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 255, 191);
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 255, 191);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+nav a:hover {
+    color: rgb(0, 255, 191);
+}
+
+/* Estilizando o formulário de contato */
+form {
+    max-width: 900px; /* Limita a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário na página */
+    padding: 20px; /* Adiciona espaço interno ao formulário */
+    background-color: #333333; /* Cor de fundo escura para destacar o formulário */
+    border-radius: 10px; /* Arredonda os cantos do formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do formulário */
+}
+
+/* Estilizando os rótulos (labels) */
+label {
+    display: block; /* Faz o rótulo ocupar toda a largura do pai */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilizando os campos de entrada e a área de texto */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Faz o campo de entrada ocupar toda a largura disponível */
+    padding: 10px; /* Espaço interno dentro do campo */
+    margin-bottom: 15px; /* Espaço abaixo do campo */
+    border: 1px solid #ccc; /* Define uma borda cinza clara ao redor do campo */
+    border-radius: 5px; /* Arredonda os cantos do campo */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total do campo */
+    font-size: 16px; /* Define o tamanho da fonte dentro dos campos */
+}
+
+/* Permite que a área de texto seja redimensionada apenas verticalmente */
+textarea {
+    resize: vertical;
+}
+
+/* Estilizando o botão de envio */
+button[type="submit"] {
+    background-color: rgb(0, 255, 191); /* Cor de fundo azul para o botão */
+    color: rgb(255, 255, 255); /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaço interno no botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Mostra o ponteiro do mouse ao passar sobre o botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+}
+
+/* Estilo ao passar o mouse sobre o botão de envio */
+button[type="submit"]:hover {
+    background-color: rgb(0, 200, 150); /* Muda a cor do fundo do botão ao passar o mouse */
+}
+
+/* Lista personalizada com marcadores */
+ul.custom-list {
+    display: block;
+    list-style-type: disc; /* Bolinhas como marcadores */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda */
+    margin-top: 10px; /* Espaço acima da lista */
+}
+
+ul.custom-list li {
+    display: block;
+    margin-bottom: 10px; /* Espaço entre os itens */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    display: list-item; /* Garante que os itens sejam exibidos em bloco, um abaixo do outro */
+}
