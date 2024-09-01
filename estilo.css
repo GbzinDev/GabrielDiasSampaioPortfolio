@@ -1,6 +1,6 @@
 /* Estilo geral */
 body {
-    background-image: url('GIF/gif.gif'); /* Substitua pelo caminho do seu GIF */
+    background-image: url('gif.gif'); /* Substitua pelo caminho do seu GIF */
     background-size: cover; /* Cobre toda a área da tela */
     background-repeat: no-repeat; /* Não repete o GIF */
     background-position: center center; /* Centraliza o GIF */
